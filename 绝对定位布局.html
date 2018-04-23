@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>绝对定位布局</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+          .container{
+            position: relative;
+          }
+          .left,.main,.right{
+            top: 0;
+            height: 130px;
+          }
+          .left{
+            position: absolute;
+            left: 0;
+            background: green;
+            width: 200px;
+          }
+          .main{
+            background: blue;
+            margin: 0 300px 0 200px;
+          }
+          .right{
+            position: absolute;
+            right: 0;
+            background: red;
+            width: 300px;
+          }
+        </style>
+    </head>
+    <body>
+     <div class="container">
+         <div class="main">main</div>
+         <div class="left">left</div>
+         <div class="right">right</div>
+     </div>
+    </body>
+</html>

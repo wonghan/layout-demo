@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Grid布局</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+          .container{
+            display:grid;
+            grid-template-columns: 200px 1fr 300px;
+            min-height:130px;
+          }
+          .left{
+            grid-column:1/2;
+            grid-row:1/2;
+            background: green;
+          }
+          .main{
+            grid-column:2/3;
+            grid-row:1/2;
+            background: blue;
+          }
+          .right{
+            grid-column: 3/4;
+            grid-row:1/2;
+            background: red;
+          }
+        </style>
+    </head>
+    <body>
+     <div class="container">
+         <div class="main">main</div>
+         <div class="left">left</div>
+         <div class="right">right</div>
+     </div>
+    </body>
+</html>

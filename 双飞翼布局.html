@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>双飞翼布局</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+          .content{
+            margin:0 300px 0 200px;
+          }
+          .left,.main,.right{
+            min-height: 130px;
+            float: left;
+          }
+          .left{
+            margin-left: -100%;
+            background: green;
+            width: 200px;
+          }
+          .main{
+            background: blue;
+            width: 100%;
+          }
+          .right{
+            margin-left:-300px;
+            background: red;
+            width: 300px;
+          }
+        </style>
+    </head>
+    <body>
+     <div class="container">
+         <div class="main">
+           <div class="content">main</div>
+         </div>
+         <div class="left">left</div>
+         <div class="right">right</div>
+     </div>
+    </body>
+</html>
